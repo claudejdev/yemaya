@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
-    <?php require_once 'views/common/menu.php'; ?>
+<div class="container">
+    <!-- header contient le menu -->
+    <?php require_once 'views/common/header.php'; ?> 
 
     <?php if (!empty($_SESSION['alert'])) { ?> <!-- l'alerte est affichée si elle est remplie dans la variable de session -->
         <div class="alert <?php echo $_SESSION['alert']['type']; ?>" role="alert">
@@ -19,7 +21,9 @@
         }
     ?>
 
-    <?php echo $page_content; ?> <!-- equivalent à < ?php echo -->
+        <?php echo $page_content; ?>
+    </div>
+    <?php require_once 'views/common/footer.php'; ?> 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
