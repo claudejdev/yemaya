@@ -4,7 +4,7 @@
 require_once("model.class.php");
 
 //extends car Model est une classe abstraite, et accès seulement à la function protected, pas aux private
-class mainManager extends Model{
+class MainManager extends Model{
     // fonction qui simule une récupération de données
     public function getDatas(){
         // $pdo = $this->getDb();

@@ -10,7 +10,7 @@ abstract class Model{
     }
 
     //Pour qu'une seule connexion existe
-    protected function getDb() //Protected pour être disponible depuis mainManager
+    protected function getDb() //Protected pour être disponible depuis MainManager
     {
         if (self::$pdo === null) {
             self::setDb();

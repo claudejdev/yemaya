@@ -1,15 +1,15 @@
 <!-- Avec du buffering dedans --> 
 <?php
 
-require_once './models/mainManager.model.php';
+require_once './models/MainManager.model.php';
 
 class MainController
 {
-    private $mainManager; //permet d'accéder aux fonctions du mainManager, uniquement par les objets de la classe
+    private $MainManager; //permet d'accéder aux fonctions du MainManager, uniquement par les objets de la classe
 
     public function __construct()
     {
-        $this->mainManager = new mainManager();
+        $this->MainManager = new MainManager();
     }
 
     public function pageGenerator($datas)
@@ -23,7 +23,7 @@ class MainController
 
     public function navbar()
     {
-        $datas = $this->mainManager->getDatas();
+        $datas = $this->MainManager->getDatas();
         $_SESSION['alert'] = [
             'message' => "Exemple de message d'alerte",
             'type' => 'alert-success',
