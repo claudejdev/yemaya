@@ -2,6 +2,7 @@
 <?php
 
 require_once './models/MainManager.model.php';
+require_once './controllers/Toolbox.class.php';
 
 class MainController
 {
@@ -21,13 +22,14 @@ class MainController
         require_once $template;
     }
 
+    //function pour le vue Navbar
     public function navbar()
     {
         $datas = $this->MainManager->getDatas();
-        $_SESSION['alert'] = [
-            'message' => "Exemple de message d'alerte",
-            'type' => 'alert-success',
-        ];
+        //cf. controllers/toolbox.class.php
+        // Toolbox::addAlertMessages("Un exemple de message d'alerte", Toolbox::COLOR_GREEN);
+        // Toolbox::addAlertMessages("Un autre exemple de message d'alerte", Toolbox::COLOR_RED);
+
         $datas_page = [
             'page_description' => 'Navbar description',
             'page_title' => 'Navbar title',

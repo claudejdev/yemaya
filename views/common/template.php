@@ -22,12 +22,16 @@
     <!-- header contient le menu -->
     <?php require_once 'views/common/header.php'; ?> 
 
-    <?php if (!empty($_SESSION['alert'])) { ?> <!-- l'alerte est affichée si elle est remplie dans la variable de session -->
-        <div class="alert <?php echo $_SESSION['alert']['type']; ?>" role="alert">
-            <?php echo $_SESSION['alert']['message']; ?>
+    <!-- l'alerte est affichée si elle est remplie dans la variable de session -->
+    <?php if (!empty($_SESSION['alert'])) {
+    foreach ($_SESSION['alert'] as $alerts) { ?>
+        <div class="alert <?php echo $alerts['type']; ?>" role="alert">
+            <?php echo $alerts['message']; ?>
         </div>
-    <?php unset($_SESSION['alert']); //l'alerte est supprimée lorsqu'elle a été affichée une fois
-        }
+        <?php } ?>
+
+    <?php unset($_SESSION['alert']); //l'alerte est supprimée lorsqu'elle a été affichée
+}
     ?>
 
         <?php echo $page_content; ?>
