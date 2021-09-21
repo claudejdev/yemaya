@@ -47,6 +47,7 @@ class MainController
         $datas_page = [
             'page_description' => 'Home description',
             'page_title' => 'Home title',
+            'page_css' => 'home.css',
             'view' => 'views/home.view.php',
             'template' => 'views/common/template.php',
         ];

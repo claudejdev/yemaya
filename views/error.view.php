@@ -1,1 +1,3 @@
-<?= $msg;?>
+<?php
+
+echo $msg;
