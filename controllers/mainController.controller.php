@@ -47,7 +47,7 @@ class MainController
         $datas_page = [
             'page_description' => 'Home description',
             'page_title' => 'Home title',
-            'page_css' => 'home.css',
+            'page_css' => ['home.css'],
             'view' => 'views/home.view.php',
             'template' => 'views/common/template.php',
         ];
@@ -92,6 +92,7 @@ class MainController
         $datas_page = [
             'page_description' => 'action2 description',
             'page_title' => 'action2 title',
+            'page_js' => ['action2.js'],
             'view' => 'views/action2.view.php',
             'template' => 'views/common/template.php',
         ];

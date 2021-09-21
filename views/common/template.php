@@ -7,10 +7,15 @@
     <meta name="description" content="<?php echo $page_description; ?>">
     <title><?php echo $page_title; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- css spécifique par page, avec test vers une valeur par défaut -->
+    <!-- CSS commun -->
+    <link href="<?php echo URL; ?>public/styles/main.css" rel="stylesheet" />
+    <!-- css spécifique par page, avec test. Possibilité de plusieurs CSS, depuis un tableau, cf. home -->
     <?php if (!empty($page_css)) { ?>
-        <link rel="stylesheet" href="<?php echo URL; ?>public/styles/<?php echo $page_css; ?>" rel="stylesheet">
+        <?php foreach ($page_css as $css_files) { ?>
+            <link rel="stylesheet" href="<?php echo URL; ?>public/styles/<?php echo $css_files; ?>" rel="stylesheet">
+        <?php } ?>
     <?php } ?>
+    <!-- alt à endforeach, endif -->
 </head>
 <body>
 <div class="container">
@@ -30,8 +35,13 @@
     <?php require_once 'views/common/footer.php'; ?> 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- JS spécifique par page, avec test. Possibilité de plusieurs JS, depuis un tableau, cf. action2 -->
+    <?php if (!empty($page_js)) { ?>
+        <?php foreach ($page_js as $js_files) { ?>
+            <script src="<?php echo URL; ?>public/scripts/<?php echo $js_files; ?>"></script>
+        <?php } ?>
+    <?php } ?>
+
 </body>
 </html>
-
-
-<!-- Note : les variables du Controller sont en snake_case. La programmation est en camelCase. -->
