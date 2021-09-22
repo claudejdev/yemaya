@@ -1,12 +1,22 @@
 # Yemaya
-Déesse mère, la mère de tous les esprits.
+Déesse mère de tous les esprits.
+
+- [Yemaya](#yemaya)
+  - [Intent](#intent)
+  - [HowTo](#howto)
+  - [Features](#features)
+  - [Appendix](#appendix)
+    - [VS Code Extensions](#vs-code-extensions)
+    - [Tools](#tools)
+    - [Sources](#sources)
+  - [Todo](#todo)
 ## Intent
 
 Un template de site en PHP selon l'architecture MVC et avec le framework CSS Bootstrap (5.1.1 en CDN).
 
-**HowTo**
-
-**Features**
+## HowTo
+ WIP
+## Features
 
 _Convention d'écriture_ :
 - [Symfony](https://symfony.com/doc/current/contributing/code/standards.html), [Yoda style](https://cs.symfony.com/doc/rules/control_structure/yoda_style.html)
@@ -34,9 +44,20 @@ _Alertes multiples_
 Défini dans template.php
 Utilisé dans mainController.controller.php, par une fonction stockée dans toolbox.class.php
 
-## Extensions VS Code
+## Appendix
+### VS Code Extensions
+ WIP
+### Tools
+- [Bootstrap](https://getbootstrap.com/)
+- [GitKraken](https://www.gitkraken.com/)
 
-## Outils
-
-[Bootstrap](https://getbootstrap.com/)
-[GitKraken](https://www.gitkraken.com/)
+### Sources
+- [L'architecture MVC | Ecole H2PROG](https://ecole.h2prog.com/courses/846335/lectures/15448687)
+- [*PHP 7 avancé*, Eyrolles, 2016](https://www.eyrolles.com/Informatique/Livre/php-7-avance-9782212677201/)
+- [PHP: Classes and Objects - Manual](https://www.php.net/manual/en/language.oop5.php/)
+  
+## Todo
+- populate the How To section
+- refactor the code, cf. PHP Mess Detector
+- better understand how the htaccess works
+- list relevant VSC extensions
