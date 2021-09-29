@@ -64,6 +64,7 @@ Utilisé dans mainController.controller.php, par une fonction stockée dans tool
 - [L'architecture MVC | Ecole H2PROG](https://ecole.h2prog.com/courses/846335/lectures/15448687)
 - [*PHP 7 avancé*, Eyrolles, 2016](https://www.eyrolles.com/Informatique/Livre/php-7-avance-9782212677201/)
 - [PHP: Classes and Objects - Manual](https://www.php.net/manual/en/language.oop5.php/)
+- *PHP – La suite*, Technobel / BStorm
   
 ## Todo
 - populate the How To section
