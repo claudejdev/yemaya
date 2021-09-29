@@ -17,7 +17,7 @@ Un template de site en PHP selon l'architecture MVC et avec le framework CSS Boo
 ## HowTo
  WIP
 ## Features
-
+ WIP
 _Convention d'écriture_ :
 - [Symfony](https://symfony.com/doc/current/contributing/code/standards.html), [Yoda style](https://cs.symfony.com/doc/rules/control_structure/yoda_style.html)
 - Le nom des fichiers qui sont des classes prennent une majuscule à la première lettre
@@ -46,7 +46,16 @@ Utilisé dans mainController.controller.php, par une fonction stockée dans tool
 
 ## Appendix
 ### VS Code Extensions
- WIP
+    Extensions Added:
+  - [php-cs-fixer, by Frank Terragna](https://marketplace.visualstudio.com/items?itemName=fterrag.vscode-php-cs-fixer)
+  - [PHP Namespace Resolver, by Mehedi Hassan](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver)
+  - [PHP Extension Pack, by Felix Becker](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-pack) (Includes [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) & [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense))
+  - [PHP Phan (Analyzer), by tyson andre](https://marketplace.visualstudio.com/items?itemName=TysonAndre.php-phan)
+  - [PHP Symbols, by lin yang](https://marketplace.visualstudio.com/items?itemName=linyang95.php-symbols)
+  - [PHPStan, by swordev](https://marketplace.visualstudio.com/items?itemName=swordev.phpstan)
+  - [PHP Snippets, by VSCSnippets](https://marketplace.visualstudio.com/items?itemName=vsc-snippets.vsc-php-snippets)
+  - [PHP Intelephense, by Ben Mewburn](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+
 ### Tools
 - [Bootstrap](https://getbootstrap.com/)
 - [GitKraken](https://www.gitkraken.com/)
@@ -59,5 +68,6 @@ Utilisé dans mainController.controller.php, par une fonction stockée dans tool
 ## Todo
 - populate the How To section
 - refactor the code, cf. PHP Mess Detector
+ use PHP Mess Detector on my Laravel controller 
+Reference: https://phpmd.org/rules/cleancode.html#staticaccess
 - better understand how the htaccess works
-- list relevant VSC extensions
